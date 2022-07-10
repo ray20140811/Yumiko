@@ -3,8 +3,7 @@
 <%= render @vocabulary %>
 
 <div>
-  <%= link_to "Edit this vocabulary", edit_vocabulary_path(@vocabulary) %> |
-  <%= link_to "Back to vocabularies", vocabularies_path %>
-
-  <%= button_to "Destroy this vocabulary", @vocabulary, method: :delete %>
+  <%= button_to "Destroy this vocabulary", @vocabulary, method: :delete %>  
+  <br/>
+  <%= link_to "回單字列表", vocabularies_path %>
 </div>
