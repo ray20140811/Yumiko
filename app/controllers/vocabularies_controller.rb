@@ -3,7 +3,7 @@ class VocabulariesController < ApplicationController
 
   # GET /vocabularies or /vocabularies.json
   def index
-    @vocabularies = Vocabulary.all
+    @vocabularies = Vocabulary.all.sort_by(&:created_at).reverse
   end
 
   # GET /vocabularies/1 or /vocabularies/1.json
